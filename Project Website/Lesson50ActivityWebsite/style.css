@@ -1,0 +1,187 @@
+html,body{
+  margin:0 auto;
+  font-family: "Anek Devanagari", sans-serif;
+  background-color:#F0F0F0;
+}
+.container{
+  display:flex;
+  padding:5px;
+}
+.center{
+  justify-content:center;
+  align-items:center;
+}
+
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color:#D3D3D3;
+   color: white;
+   font-family: "Anek Devanagari", sans-serif;
+
+}
+
+  
+  .navbar-center .nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: auto;
+	margin-top:5px;
+	margin-bottom:5px;
+    padding-left: 15px;
+	padding-right: 15px;
+    font-size:40px;
+	text-decoration: none;
+    font-family: "Anek Devanagari", sans-serif;
+	font-style: bold;
+    color: white;
+	
+  }
+  
+  
+  .navbar-center .nav-links a {
+    color: #fffff;
+    text-decoration: none;
+  }
+  
+  .navbar-center {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 1rem;
+    position: relative;
+  }
+
+
+  .navbar-center .nav-links a:hover{
+    color:red;
+    transition:2s;
+	text-decoration: underline;
+  }
+  
+.subbanner{
+  background-color:light-gray;
+  font-family: "Anek Devanagari", sans-serif;
+  font-size:40px;
+  text-align: center;
+  margin:auto;
+  padding:10px;
+}
+#banner{
+  background-color:red;
+  color:white;
+  font-size:40px;
+}
+#footer{
+  background-color:red;
+  color:white;
+  /*position:fixed;*/
+  left: 0;
+  right: 0;
+  bottom:0px;
+}
+ 
+.heading{
+  font-weight:bold;
+}
+.flip-card{
+  width:275px;
+  height:400px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #D3D3D3;	
+  border-radius:4px;
+  padding:6px;
+  margin:6px;
+  box-shadow:4px 4px 2px black;
+  perspective: 1000px;
+ 
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width:275px;
+  height:400px;
+  justify-content: center;
+  flex-direction: column;  
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width:275px;
+  height:400px;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #D3D3D3;	
+  color: black;
+  transform: rotateY(180deg);
+}
+
+#panel{
+  flex:1;
+}
+
+.flip-card-back img{
+  margin-top:15px;
+  width:250px;
+  height:250px;
+  box-shadow:2px 2px 2px black;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+.flip-card-back img:hover{
+  margin-top:15px;
+  box-shadow:5px 5px 5px black;
+  justify-content: center;
+  align-items: center;
+  transition:2s;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+.filter{
+  display:flex;
+  background-color: #dff2ff;
+  border:1px solid black;
+  
+}
+#output{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#output1{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
